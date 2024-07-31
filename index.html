@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Calcule seu IMC!</title>
+    <meta name="title" content="Calcule seu IMC!" />
+    <meta name="description" content="Saúde é vida! Calcule seu IMC e veja sua classificação." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Calcule seu IMC!" />
+    <meta property="og:description" content="Saúde é vida! Calcule seu IMC e veja sua classificação." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta property="twitter:title" content="Calcule seu IMC!" />
+    <meta property="twitter:description" content="Saúde é vida! Calcule seu IMC e veja sua classificação." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="flex-center">
+
+        <section class="content formIMC">
+            <h1>Calculadora de IMC</h1>
+            <p>Preencha os dados para calcular</p>
+
+            <form autocomplete="off">
+                <input type="number" placeholder="Peso" id="peso" step="0.001">
+                <input type="number" placeholder="Altura" id="altura" step="0.01">
+                <button id="btn-imc" type="button">Calcular IMC</button>
+            </form>
+
+        </section>
+
+        <section class="content result">
+            <h1>Seu IMC é: <br> <span id="imc"></span> </h1>
+            <p>Sua classificação é: <strong id="classificacao"></strong></p>
+            <button id="btn-refazer">Refazer teste</button>
+        </section>
+
+    </div>
+
+    <div class="info-lgpd">
+
+        <p>Nós utilizamos cookies e outras tecnologias semelhantes para coletar dados durante a navegação para melhorar
+            a sua experiência em nossos serviços. Saiba mais em nossa Política de privacidade e Cookies.</p>
+        <button>Estou Ciente</button>
+
+    </div>
+
+    <script src="js/lgpd.js"></script>
+    <script src="js/imc.js"></script>
+
+</body>
+
+</html>

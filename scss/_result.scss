@@ -1,0 +1,11 @@
+.result{
+    //display: none !important; //provisório
+    
+    row-gap: 30px;
+
+    button{
+        @include button();
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,18 @@
+//Mixin -> Função com o objetivo de reaproveitar blocos de formatação
+@mixin button(){
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: linear-gradient(to right , $brand, $brandDark);
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover{
+        background: linear-gradient(to left , $brand, $brandDark);
+    }
+
+    @media (max-width: 600px){
+        border-radius: $rounded;
+    }
+
+}

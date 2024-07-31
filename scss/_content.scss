@@ -1,0 +1,39 @@
+
+.content{
+    width: 550px;
+    height: 416px;
+    background-color: $black;    
+    padding: 75px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: $rounded;
+
+    h1{
+        font-size: 36px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    @import 'form-imc';
+
+    @media (max-width: 600px){
+        
+        width: 90%;
+        padding: 30px;        
+        
+        h1{
+            font-size: 24px;
+        }
+
+        p{
+            font-size: 14px;
+        }
+    }
+}

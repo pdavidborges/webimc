@@ -1,0 +1,31 @@
+.info-lgpd{
+
+    background-color: $black;
+    padding: 20px 145px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    p{
+        max-width: 850px;
+    }
+
+    button{
+        @include button();
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    @media (max-width: 1200px){
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
